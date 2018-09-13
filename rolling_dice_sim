@@ -1,0 +1,28 @@
+from random import randint
+play = True
+while play == True:
+    print("combien de dés")
+    nb_dice = int(input())
+    lst_dice=[]
+
+    for i in range(0, nb_dice):
+        print("taille du dé " + str(i + 1))
+        dice_size = int(input())
+        if dice_size <= 0:
+            dice_size = dice_size * -1
+        lst_dice.append(dice_size)
+        print(lst_dice)
+
+    for i in lst_dice:
+        resultat = randint(1, i)
+        print ("dé "+ str(i) + " faces = " + str(resultat))
+    
+    print ("continue ?  Y/N")
+    cont = input().upper()
+    if cont == "N":
+        play = False
+
+
+
+
+
