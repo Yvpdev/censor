@@ -1,4 +1,4 @@
-# censor
+#censor
 censor est un script qui permet de changer un mot défini par l'utilisateur par des *
 
 #rolling_dice_simulator
